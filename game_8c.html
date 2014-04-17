@@ -144,6 +144,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>game_maximumValue</b> 
 <tr class="memitem:a545d6a95452f54f48e1436d62afcf95b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8c.html#a545d6a95452f54f48e1436d62afcf95b">game_updateScore</a> (struct <a class="el" href="structGame.html">Game</a> *game, struct <a class="el" href="structPlayer.html">Player</a> *bidWinner)</td></tr>
 <tr class="memdesc:a545d6a95452f54f48e1436d62afcf95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to update the score of teams and players after a round.  <a href="#a545d6a95452f54f48e1436d62afcf95b">More...</a><br/></td></tr>
 <tr class="separator:a545d6a95452f54f48e1436d62afcf95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5283292f9c3a8d5eee4a48aa3456bb05"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="game_8c.html#a5283292f9c3a8d5eee4a48aa3456bb05">game_arrangePlayersRound</a> (struct <a class="el" href="structGame.html">Game</a> *game, int i)</td></tr>
+<tr class="memdesc:a5283292f9c3a8d5eee4a48aa3456bb05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to add a round to a game and to arrange players into it, according to game rules.  <a href="#a5283292f9c3a8d5eee4a48aa3456bb05">More...</a><br/></td></tr>
+<tr class="separator:a5283292f9c3a8d5eee4a48aa3456bb05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains implementations of the functions used for game-related operations. </p>
@@ -274,6 +277,42 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>game_maximumValue</b> 
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NO_ERROR on success, error code otherwise. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5283292f9c3a8d5eee4a48aa3456bb05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int game_arrangePlayersRound </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structGame.html">Game</a> *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to add a round to a game and to arrange players into it, according to game rules. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>The game to process. </td></tr>
+    <tr><td class="paramname">i</td><td>The index of the first player in that round.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NO_ERROR or 0 on success, negative value otherwise. </dd></dl>
 
 </div>
 </div>
@@ -649,7 +688,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>game_maximumValue</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 15 2014 23:54:33 for CruceGame by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Apr 18 2014 00:35:15 for CruceGame by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
